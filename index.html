@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas - Antexon</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            background-color: #0d1117;
+            /* Twój plik bg.jpg jako tło strony */
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .main-card {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(18, 22, 31, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 45px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        .top-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #9ca3af;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        /* Twój plik antusyipe.png jako awatar postaci */
+        .character-avatar {
+            width: 110px;
+            height: auto;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 25px 0;
+        }
+
+        .description {
+            color: #cbd5e1;
+            font-size: 0.92rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .cards-grid.two-cols {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #ffffff;
+        }
+
+        .card-subtitle {
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            line-height: 1.45;
+        }
+
+        /* WERSJA DLA TELEFONÓW */
+        @media (max-width: 768px) {
+            body {
+                padding: 12px 10px;
+                background-attachment: scroll;
+            }
+
+            .main-card {
+                padding: 25px 18px;
+                border-radius: 16px;
+            }
+
+            .header-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .character-avatar {
+                width: 90px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .cards-grid, 
+            .cards-grid.two-cols {
+                grid-template-columns: 1fr !important;
+            }
+
+            .card {
+                padding: 16px;
+            }
+
+            .description {
+                font-size: 0.88rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <div class="top-label">O NAS</div>
+
+        <div class="header-section">
+            <img src="antusyipe.png" alt="Postać Antexon" class="character-avatar">
+            <div class="header-text">
+                <h1>O NAS</h1>
+                <p class="description">
+                    Jesteśmy pięcioosobowym zespołem twórców, projektantów i pasjonatów technologii, których połączyła wspólna przestrzeń działania: środowisko gry Minecraft. Powstaliśmy z chęci tworzenia treści, które łączą techniczną precyzję z przystępną, angażującą formą — bez chaosu i przypadkowości.
+                </p>
+                <p class="description">
+                    Każdy z nas wnosi do projektu inne kompetencje, dzięki czemu możemy realizować pomysły, które wymagają jednocześnie wiedzy technicznej, wyczucia estetycznego i dobrej organizacji produkcji.
+                </p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section-title">Nasz zespół</div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-title">Architektura i budownictwo</div>
+                <div class="card-subtitle">PROJEKTOWANIE</div>
+                <div class="card-desc">Odpowiada za koncepcję i wykonanie konstrukcji, dbając o spójność stylu i skalę projektów.</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Inżynieria mechanizmów</div>
+                <div class="card-subtitle">REDSTONE / LOGIKA</div>
+                <div class="card-desc">Projektuje i optymalizuje układy logiczne oraz automatyzacje wykorzystywane w naszych światach.</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Optymalizacja techniczna</div>
+                <div class="card-subtitle">WYDAJNOŚĆ</div>
+                <div class="card-desc">Dba o stabilność i płynność działania serwera oraz projektów pod względem technicznym.</div>
+            </div>
+        </div>
+
+        <div class="cards-grid two-cols">
+            <div class="card">
+                <div class="card-title">Produkcja wideo</div>
+                <div class="card-subtitle">MONTAŻ I DŹWIĘK</div>
+                <div class="card-desc">Odpowiada za nagrania, montaż oraz czysty dźwięk we wszystkich publikowanych materiałach.</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Oprawa graficzna</div>
+                <div class="card-subtitle">DESIGN</div>
+                <div class="card-desc">Tworzy identyfikację wizualną kanału — od miniatur po elementy graficzne w materiałach wideo.</div>
+            </div>
+        </div>
+
+        <div class="section-title">Nasza misja</div>
+        <p class="description">
+            Chcemy budować przestrzeń dla odbiorców szukających treści estetycznych i przemyślanych. Zależy nam na jakości, a nie ilości — dlatego każdy projekt przechodzi przez wspólne planowanie i dopracowanie szczegółów, zanim trafi do publikacji.
+        </p>
+    </div>
+
+</body>
+</html>
