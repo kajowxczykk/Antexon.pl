@@ -29,7 +29,7 @@
             background-size: cover;
             min-height: 100vh;
             padding-top: 100px;
-            padding-bottom: 60px;
+            padding-bottom: 30px;
         }
 
         /* PASEK NAWIGACJI */
@@ -307,11 +307,20 @@
             transform: translateY(-1px);
         }
 
+        /* STOPKA */
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 0.8rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
         /* RESPONSYWNOŚĆ (TELEFONY I TABLETY) */
         @media (max-width: 768px) {
             body {
                 padding-top: 80px;
-                padding-bottom: 30px;
+                padding-bottom: 20px;
             }
 
             .navbar {
@@ -369,6 +378,11 @@
                 flex-direction: column;
                 text-align: center;
                 padding: 16px;
+            }
+
+            .footer {
+                margin-top: 18px;
+                font-size: 0.75rem;
             }
         }
     </style>
@@ -560,6 +574,10 @@
         </div>
 
     </div>
+
+    <footer class="footer">
+        &copy; 2026 kajowxczykk. All rights reserved.
+    </footer>
 
     <script>
         function openTab(tabId, evt) {
